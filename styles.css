@@ -1,0 +1,248 @@
+/* =========================================
+   1. Estilos Generales
+========================================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #666;
+    text-align: center;
+}
+
+/* =========================================
+   2. Barra de Navegación (Navbar)
+========================================= */
+.navbar {
+    background-color: #2C3E50; /* Azul Oscuro */
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border-radius: 5px;
+}
+
+.store-icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* =========================================
+   3. Formularios de Login y Registro
+========================================= */
+.form-container {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #2C3E50; /* Azul Oscuro */
+}
+
+/* =========================================
+   4. Prototipo de Card de Producto
+========================================= */
+.product-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 1em;
+}
+
+.product-info h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.product-info p {
+    color: #666;
+    margin: 0.5em 0;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #E74C3C; /* Rojo */
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #2C3E50; /* Azul Oscuro */
+}
+
+/* =========================================
+   5. Layout General para Home y Páginas de Categoría
+========================================= */
+.main-layout {
+    padding: 2em 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-layout h1 {
+    margin-bottom: 1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* =========================================
+   6. Responsividad
+========================================= */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        width: 100%;
+    }
+
+    .navbar-links a {
+        display: block;
+        width: 100%;
+        padding: 0.5em 0;
+    }
+
+    .store-icon {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 1em;
+    }
+
+    .product-card {
+        max-width: 100%;
+    }
+}
+
