@@ -1,0 +1,61 @@
+/* =========================================
+   4. Prototipo de Card de Producto
+========================================= */
+.product-card {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 1em;
+}
+
+.product-info h3 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.product-info p {
+    color: #666;
+    margin: 0.5em 0;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #E74C3C; /* Rojo */
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.buy-btn {
+    padding: 10px 20px;
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #2C3E50; /* Azul Oscuro */
+}

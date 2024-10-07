@@ -1,0 +1,64 @@
+/* Eliminar márgenes y relleno del body y html */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   2. Barra de Navegación (Navbar)
+========================================= */
+.navbar {
+    background-color: #2C3E50; /* Azul Oscuro */
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%; /* Asegurar que cubra toda la anchura */
+    margin: 0; /* Eliminar cualquier margen */
+}
+
+.navbar .container {
+    width: 100%; /* Cambiar a 100% para eliminar los márgenes */
+    max-width: 1200px; /* Mantener un ancho máximo opcional */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border-radius: 5px;
+}
+
+.store-icon {
+    width: 50px;
+    height: 50px;
+}
+

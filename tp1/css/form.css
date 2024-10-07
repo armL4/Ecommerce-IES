@@ -1,0 +1,49 @@
+/* =========================================
+   3. Formularios de Login y Registro
+========================================= */
+.form-container {
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #18BC9C; /* Verde Aqua */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #2C3E50; /* Azul Oscuro */
+}

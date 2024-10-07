@@ -1,0 +1,19 @@
+/* =========================================
+   5. Layout General para Home y Páginas de Categoría
+========================================= */
+.main-layout {
+    padding: 2em 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-layout h1 {
+    margin-bottom: 1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}

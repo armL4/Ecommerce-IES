@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+</head>
+<body>
+    <h1>Has cerrado sesión</h1>
+    <script>
+        // Elimina el estado de sesión y redirige al login
+        localStorage.removeItem('loggedIn');
+        window.location.href = 'login.html'; // Redirige al login
+    </script>
+</body>
+</html>
